@@ -30,3 +30,24 @@ print(singleNumber([4,1,2,1,2]))
 # Output: 1
 
 print(singleNumber([1]))
+
+
+[1,2,2,1,3]
+def singleN(bums):
+    
+    p = set()
+    
+    for b in bums:
+        
+        if b not in p:
+            p.add(b) 
+            
+        else:
+            p.remove(b)
+    return p.pop()
+            
+            
+print(singleN([1,2,2,1,3]))
+            
+        
+    
